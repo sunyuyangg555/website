@@ -58,6 +58,10 @@ gem 'redis'
 
 gem 'ansi-to-html', require: false
 
+gem 'tzinfo-data' if Gem.win_platform?
+
+gem 'wdm' if Gem.win_platform?
+
 group :production do
   #gem "skylight"
 end
